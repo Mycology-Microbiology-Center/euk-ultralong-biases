@@ -1,0 +1,66 @@
+cff-version: 1.2.0
+title: Polymerase and primer biases in eukaryote ultra-long-read metabarcoding
+message: >-
+  If you use this code, please cite the article from
+  preferred-citation.
+type: software
+authors:
+  - given-names: Leho
+    family-names: Tedersoo
+  - given-names: Valeria
+    family-names: Flores-Almaraz
+  - given-names: Rasmus
+    family-names: Puusepp
+  - given-names: Vladimir
+    family-names: Mikryukov
+repository-code: 'https://github.com/Mycology-Microbiology-Center/euk-ultralong-biases'
+abstract: >-
+  Ultra-long-read metabarcoding is a recently developed method
+  for biodiversity monitoring that enables both high-accuracy
+  species-level identification and reliable phylogenetic
+  placement of taxa. Ultra-long-read analyses require
+  high-processivity DNA polymerases for amplicons and primer
+  pairs that fully cover the targeted taxonomic groups. So far,
+  there is no published information on the relative suitability
+  of commercial high-processivity polymerase kits and on the
+  relative performance of primer pairs targeting a DNA fragment
+  spanning much of the 18S, ITS and 28S rRNA gene regions in
+  eukaryotes. Using PacBio sequencing, we assessed the
+  performance of five commercial high-processivity DNA
+  polymerases and three ultra-long marker primer pairs relative
+  to a commonly used full-ITS primer pair on producing artefacts
+  and recovering biodiversity in two mock communities and 10
+  soil samples. Our analyses revealed great differences in both
+  polymerases and primer pairs in data quality and biodiversity,
+  with the main differences between full-ITS and ultra-long
+  amplicons. The full-ITS approach revealed substantially
+  greater biodiversity across taxonomic levels, indicating that
+  medium-sized amplicons are better suited for routine
+  biodiversity monitoring than ultra-long amplicons. For testing
+  evolutionary hypotheses, we recommend using the Solis or
+  Fusion polymerases and the Euk575F-21Rngs primer pair in
+  ultra-long-read metabarcoding analyses of soil eukaryotes.
+keywords:
+  - metabarcoding
+  - ultra-long reads
+  - PacBio
+  - DNA polymerase
+  - primer bias
+  - rRNA operon
+  - eukaryotes
+license: MIT
+preferred-citation:
+  type: article
+  title: Polymerase and primer biases in eukaryote ultra-long-read metabarcoding
+  authors:
+    - given-names: Leho
+      family-names: Tedersoo
+    - given-names: Valeria
+      family-names: Flores-Almaraz
+    - given-names: Rasmus
+      family-names: Puusepp
+    - given-names: Vladimir
+      family-names: Mikryukov
+  journal: Molecular Ecology Resources
+  year: 2026
+  status: submitted
