@@ -4,6 +4,12 @@ Code accompanying Tedersoo L, Flores-Almaraz V, Puusepp R, Mikryukov V. "Polymer
 
 Raw reads are available from the European Nucleotide Archive (ENA) under project [PRJEB123023](https://www.ebi.ac.uk/ena/browser/view/PRJEB123023). FASTQ files, reference databases, BLAST results, or generated results are not included in this repository.  
 
+## Input data
+
+Demultiplexed reads can be downloaded from ENA with their submitted filenames using the first section of `01_nextits_processing.sh`. The ultra-long input contains all files except `ITS9mun_*`; the full-ITS input contains all files, because ultra-long reads were also trimmed to the ITS9mun-ITS4ngsUni region.
+
+In the original analysis, NextITS was run on a larger set of demultiplexed files from the same sequencing runs. These included samples from an unrelated study and two negative controls, which together contained ~33% of ultra-long reads assigned to OTUs. The ENA submission contains only the samples analysed in the manuscript. Re-running the workflow from ENA data might therefore produce similar but not identical OTU sets, abundances, and index-switching scores. The OTU hashes of the five mock-community species in `05_mock_error_and_index_switching.R` may also need updating.
+
 ## Expected layout
 
 ```
