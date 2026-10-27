@@ -1,8 +1,8 @@
 cff-version: 1.2.0
 title: Polymerase and primer biases in eukaryote ultra-long-read metabarcoding
 message: >-
-  If you use this code, please cite the article from
-  preferred-citation.
+  If you use this code, please cite both the article from
+  preferred-citation and the software itself.
 type: software
 authors:
   - given-names: Leho
@@ -13,6 +13,7 @@ authors:
     family-names: Puusepp
   - given-names: Vladimir
     family-names: Mikryukov
+doi: 10.5281/zenodo.23687374
 repository-code: 'https://github.com/Mycology-Microbiology-Center/euk-ultralong-biases'
 abstract: >-
   Ultra-long-read metabarcoding is a recently developed method
