@@ -1,4 +1,6 @@
-# euk-ultralong-biases
+<a href="https://mmc.ut.ee"><img src="assets/MycologyMicrobiologyCenter_logo.png" alt="Mycology and Microbiology Center" width="120" align="right"></a>
+
+# Polymerase and primer biases in eukaryote ultra-long-read metabarcoding
 
 Code accompanying Tedersoo L, Flores-Almaraz V, Puusepp R, Mikryukov V. "Polymerase and primer biases in eukaryote ultra-long-read metabarcoding" (Molecular Ecology Resources, 2026).
 
