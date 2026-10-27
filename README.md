@@ -4,6 +4,28 @@ Code accompanying Tedersoo L, Flores-Almaraz V, Puusepp R, Mikryukov V. "Polymer
 
 Raw reads are available from the European Nucleotide Archive (ENA) under project [PRJEB123023](https://www.ebi.ac.uk/ena/browser/view/PRJEB123023). FASTQ files, reference databases, BLAST results, or generated results are not included in this repository.  
 
+## Expected layout
+
+```
+data/
+  reads/
+    all/                       FASTQ files downloaded from ENA
+    ultralong/                 symlinks to ultra-long FASTQ files
+    full_its/                  symlinks to all FASTQ files
+  blast/
+    ultralong/                 tables with BLAST results for ITS, SSU, and LSU regions
+    full_its/                  tables with BLAST results for ITS, SSU, and LSU regions
+database/
+  EUKARYOME_2.0_ITS.fasta
+  EUKARYOME_2.0_ITS.udb
+  RF01960.cm
+results/                       generated locally; ignored by Git
+```
+
+BLAST tables are expected as serialized R objects named `BLAST_ITS.RData`, `BLAST_SSU.RData`, `BLAST_LSU.RData`, `BLAST_SSU_f500.RData`, and `BLAST_LSU_l500.RData`. Each table must contain `QueryName` and the ranked hit columns produced for the study. BLAST searches and manual taxonomic curation are outside the scope of this repository.
+
+Input filenames must retain the primer-pair prefix and polymerase suffix used in the study, for example `EUK575F_<run>__<sample>_A.fq.gz`. Primer prefixes are `3NDL`, `EUK002F`, `EUK575F`, `Parabas`, and `ITS9mun`. Polymerase codes are A/F/G/J/K/N = Solis, B/H = TaKaRa, C/I = Platinum, D/L = Fusion, E/M = Phusion, and an absent suffix denotes Solis.
+
 
 ## Reference databases
 
